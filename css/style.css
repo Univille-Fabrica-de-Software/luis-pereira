@@ -1,9 +1,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-
+html{
+    background-color: #eae7e7;
+}
 
 /* Menu de navegação */
 nav{
@@ -137,4 +140,44 @@ header{
 .jobs{
     width: 100%;
     
+}
+
+.cited-tech{
+    width: 100%;
+    margin: 5% 0;
+}
+.cited-tech-title h2{
+    font-size: xx-large;
+    text-align: center;
+    color: #026036;
+    font-weight: 800;
+}
+.cited-tech-icons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.cited-tech-icons-wrap{
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.cited-tech-resume{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.cited-tech-container{
+    width: 70%;
+    padding: 10px;
+    background-color: #13c04d;
+    border-radius: 7px;
+    border-bottom: 2px solid #026036;
+}
+.cited-tech-container p {
+    text-align: justify;
+    color: ;
 }
