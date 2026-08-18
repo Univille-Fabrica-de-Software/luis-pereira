@@ -1,234 +1,394 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="image/png" href="univille.png">
-    <title>Análise de Mercado</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Análise do Mercado de Tecnologia</title>
+
+    <meta name="description" content="Landing page acadêmica com a análise de 8 vagas de tecnologia em Joinville e no Brasil.">
+    <meta name="keywords" content="tecnologia, mercado de trabalho, vagas, Joinville, desenvolvimento web, HTML, CSS, bootstrap">
+    <meta name="author" content="Luis Guilherme Pereira">
+    <meta http-equiv="content-language" content="pt-BR">
+    <meta name="theme-color" content="#026036">
+
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon_io/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/favicon_io/apple-touch-icon.png">
+    <link rel="manifest" href="assets/icons/favicon_io/site.webmanifest">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/9465018f70.js" crossorigin="anonymous"></script>
-    <link href="https://googleapis.com" rel="stylesheet">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <nav>
-        <div class="nav-pai">
-            <div class="nav-left">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-marca fixed-top" style="background-color: #f6f3f3;">
+            <div class="container">
 
-                <div class="img-container">
-                    <img src="https://images02.gruposinternet.com.br/unsafe/226x136/smart/https://www.univille.edu.br/images/597182/878952-835d8fb661bbdee0c11eb7fb0fdbae8c.jpg"
-                        width="70px" alt="">
+                <a href="#inicio" class="navbar-brand d-flex align-items-center gap-2">
+                    <img src="assets/images/univille.png" alt="Logotipo da Univille" class="logo">
+                    <span class="lh-sm fs-6 fw-semibold">
+                        Fábrica de Software<br>Engenharia de Software
+                    </span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu de navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="menuPrincipal">
+                    <ul class="navbar-nav gap-lg-2">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pesquisa">Pesquisa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tecnologias">Tecnologias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vagas">Vagas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#competencias">Competências</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#conclusao">Conclusão</a>
+                        </li>
+                    </ul>
                 </div>
+            </div>
+        </nav>
+    </header>
 
-                <div class="title">
-                    <div class="division-title">
-                        <span>Fábrica de Software</span>
+    <main>
+        <section id="inicio" class="hero-section">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-7">
+                        <h1 class="display-5 fw-bold titulo-marca mb-3">
+                            Análise do mercado de tecnologia em Joinville e no Brasil
+                        </h1>
+                        <p class="lead mb-2">
+                            Esta página apresenta uma análise sobre o mercado regional de Joinville e o mercado nacional,
+                            a partir de anúncios reais de vagas publicados em redes sociais e plataformas de emprego.
+                        </p>
+                        <p class="text-muted mb-4">
+                            Luis Guilherme Pereira - 5º semestre de Engenharia de Software
+                        </p>
                     </div>
-                    <div class="division-title">
-                        <span>Engenharia de Software</span>
+                    <div class="col-lg-5">
+                        <div class="hero-imagem" role="img" aria-label="Campus da Univille em Joinville"></div>
                     </div>
                 </div>
             </div>
-            <div class="nav-right">
-                <div class="nav-item">
-                    <p>Tecnologias</p>
-                </div>
-                <div class="nav-item">
-                    <p>Análise</p>
-                </div>
-                <div class="nav-item">
-                    <p>Vagas</p>
+        </section>
+
+        <section id="pesquisa" class="section-padding">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-4">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold titulo-marca">Pesquisa de mercado</h2>
+                        <p class="text-muted mb-0">
+                            Foi levantada uma pesquisa sobre oito anúncios de emprego em redes sociais, como o LinkedIn,
+                            e em plataformas de emprego. Os anúncios foram divididos igualmente entre Joinville e o Brasil em geral.
+                        </p>
+                    </div>
                 </div>
 
-
+                <div class="row row-cols-2 row-cols-lg-4 g-3 text-center">
+                    <div class="col">
+                        <div class="card card-metrica h-100">
+                            <div class="card-body p-4">
+                                <p class="metrica-numero mb-1">8</p>
+                                <p class="metrica-rotulo mb-0">Vagas analisadas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-metrica h-100">
+                            <div class="card-body p-4">
+                                <p class="metrica-numero mb-1">4</p>
+                                <p class="metrica-rotulo mb-0">Vagas regionais (Joinville)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-metrica h-100">
+                            <div class="card-body p-4">
+                                <p class="metrica-numero mb-1">4</p>
+                                <p class="metrica-rotulo mb-0">Vagas nacionais</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-metrica h-100">
+                            <div class="card-body p-4">
+                                <p class="metrica-numero mb-1">6+</p>
+                                <p class="metrica-rotulo mb-0">Tecnologias mapeadas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
 
+        <section id="tecnologias" class="section-padding faixa-clara">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-4">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold titulo-marca text-uppercase">Tecnologias mais citadas</h2>
+                        <p class="text-muted mb-0">
+                            Frequência com que cada tecnologia apareceu entre os oito anúncios analisados.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Icones importados pelo Font Awesome -->
+                <div class="row row-cols-2 row-cols-lg-4 g-3 text-center mb-4">
+                    <div class="col">
+                        <div class="card card-tech h-100">
+                            <div class="card-body p-4">
+                                <i class="fa-brands fa-square-js fa-3x" style="color: rgb(230, 187, 32);"></i>
+                                <p class="fw-semibold mt-3 mb-0">JavaScript</p>
+                                <p class="text-muted small mb-0">Em 6 vagas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-tech h-100">
+                            <div class="card-body p-4">
+                                <i class="fa-brands fa-node fa-3x" style="color: rgb(26, 177, 23);"></i>
+                                <p class="fw-semibold mt-3 mb-0">Node.js</p>
+                                <p class="text-muted small mb-0">Em 4 vagas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-tech h-100">
+                            <div class="card-body p-4">
+                                <span class="d-inline-flex align-items-center gap-2">
+                                    <i class="fa-brands fa-git fa-3x" style="color: rgb(210, 80, 21);"></i>
+                                    <i class="fa-brands fa-github fa-3x" style="color: rgb(0, 0, 0);"></i>
+                                </span>
+                                <p class="fw-semibold mt-3 mb-0">Git / GitHub</p>
+                                <p class="text-muted small mb-0">Em 7 vagas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card card-tech h-100">
+                            <div class="card-body p-4">
+                                <i class="fa-solid fa-database fa-3x" style="color: rgb(38, 102, 204);"></i>
+                                <p class="fw-semibold mt-3 mb-0">PostgreSQL</p>
+                                <p class="text-muted small mb-0">Em 6 vagas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="d-flex flex-wrap gap-2 justify-content-center">
+                            <span>TypeScript</span>
+                            <span>PHP</span>
+                            <span>React</span>
+                            <span>Angular</span>
+                            <span>C# / .NET</span>
+                            <span>Laravel</span>
+                            <span>Docker</span>
+                            <span>Python</span>
+                            <span>Go</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vagas" class="section-padding">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold titulo-marca">Vagas analisadas</h2>
+                        <p class="text-muted mb-0">
+                            Comparativo entre as oportunidades regionais e nacionais levantadas durante a pesquisa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <h3 class="h5 text-uppercase titulo-marca mb-3">
+                            Joinville
+                        </h3>
+
+                        <div class="card card-vaga mb-3">
+                            <div class="card-body">
+                                <h4 class="h6 fw-bold titulo-marca mb-1">Desenvolvedor Full Stack PL</h4>
+                                <p class="text-muted small mb-2">Multipedidos</p>
+                                <p class="mb-0 small">JavaScript, PHP, Angular, Laravel</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-vaga mb-3">
+                            <div class="card-body">
+                                <h4 class="h6 fw-bold titulo-marca mb-1">Desenvolvedor(a) Backend Júnior</h4>
+                                <p class="text-muted small mb-2">Ultra LIMS</p>
+                                <p class="mb-0 small">PHP, Next.js, PostgreSQL, Docker</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-vaga mb-3">
+                            <div class="card-body">
+                                <h4 class="h6 fw-bold titulo-marca mb-1">Desenvolvedor C#</h4>
+                                <p class="text-muted small mb-2">Selbetti Tecnologia</p>
+                                <p class="mb-0 small">C#, TypeScript, .NET, Angular</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-vaga mb-3">
+                            <div class="card-body">
+                                <h4 class="h6 fw-bold titulo-marca mb-1">Software Engineer (Back-end)</h4>
+                                <p class="text-muted small mb-2">Motorista PX</p>
+                                <p class="mb-0 small">PHP, Go, Laravel, PostgreSQL</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <h3 class="h5 text-uppercase titulo-marca mb-3">
+                            Nacional
+                        </h3>
+
+                        <div class="card card-vaga mb-3">
+                            <div class="card-body">
+                                <h4 class="h6 fw-bold titulo-marca mb-1">Desenvolvedor Fullstack Pleno</h4>
+                                <p class="text-muted small mb-2">N/A</p>
+                                <p class="mb-0 small">JavaScript, TypeScript, React, Node.js</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-vaga mb-3">
+                            <div class="card-body">
+                                <h4 class="h6 fw-bold titulo-marca mb-1">Desenvolvedor Back-end PL</h4>
+                                <p class="text-muted small mb-2">Fasters Soluções em Tecnologia</p>
+                                <p class="mb-0 small">TypeScript, NestJS, PostgreSQL, Docker</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-vaga mb-3">
+                            <div class="card-body">
+                                <h4 class="h6 fw-bold titulo-marca mb-1">Desenvolvedor Full Stack Python e React</h4>
+                                <p class="text-muted small mb-2">Firedev IT</p>
+                                <p class="mb-0 small">Python, React, Node.js, PostgreSQL</p>
+                            </div>
+                        </div>
+
+                        <div class="card card-vaga mb-3">
+                            <div class="card-body">
+                                <h4 class="h6 fw-bold titulo-marca mb-1">Desenvolvedor Full Stack .NET e Node</h4>
+                                <p class="text-muted small mb-2">ArcH</p>
+                                <p class="mb-0 small">C#, .NET Core, Node.js, React</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competencias" class="section-padding faixa-clara">
+            <div class="container">
+                <div class="row justify-content-center text-center mb-4">
+                    <div class="col-lg-8">
+                        <h2 class="fw-bold titulo-marca">Competências exigidas</h2>
+                    </div>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card card-competencia h-100">
+                            <div class="card-body p-4">
+                                <h3 class="h5 fw-bold titulo-marca mb-3">
+                                    Competências técnicas
+                                </h3>
+                                <ul class="lista-competencia mb-0">
+                                    <li>Desenvolvimento com HTML, CSS e JavaScript</li>
+                                    <li>Versionamento de código com Git e GitHub</li>
+                                    <li>Noções de banco de dados e SQL</li>
+                                    <li>Consumo e criação de APIs REST</li>
+                                    <li>Programação orientada a objetos e frameworks (React, Angular, Laravel, .NET)</li>
+                                    <li>Boas práticas de código com Clean Code, SOLID e testes automatizados</li>
+                                    <li>Uso de containers e ambientes com Docker</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card card-competencia h-100">
+                            <div class="card-body p-4">
+                                <h3 class="h5 fw-bold titulo-marca mb-3">
+                                    Competências comportamentais
+                                </h3>
+                                <ul class="lista-competencia mb-0">
+                                    <li>Comunicação clara com o time e com o cliente</li>
+                                    <li>Trabalho em equipe</li>
+                                    <li>Pensamento analítico e resolução de problemas</li>
+                                    <li>Proatividade e busca constante por aprendizado</li>
+                                    <li>Adaptação e aprendizado rápido</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="conclusao" class="section-padding">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="card card-conclusao">
+                            <div class="card-body p-4 p-lg-5">
+                                <h2 class="fw-bold titulo-marca mb-3">Conclusão da análise</h2>
+                                <p class="text-justify">
+                                    O mercado atual, além de requisitar o conhecimento técnico nas tecnologias apresentadas acima,
+                                    também exige uma base sólida em Clean Code, SOLID, Clean Architecture e testes automatizados
+                                    e, principalmente com o avanço da tecnologia, saber lidar com Inteligência Artificial.
+                                </p>
+                                <p class="text-justify mb-0">
+                                    Deixando de lado a parte técnica, as empresas buscam hoje por um perfil mais comunicativo e
+                                    analítico, no qual se prioriza um ambiente mais profissional e claro.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape" style="color: #ffffff;">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-3 g-2 text-center align-items-center">
+                <div class="col">
+                    <p class="mb-0">12/08/2026</p>
+                </div>
+                <div class="col">
+                    <p class="mb-0">Fábrica de Software Univille</p>
+                </div>
+                <div class="col">
+                    <p class="mb-0">Luis Guilherme Pereira</p>
+                </div>
+            </div>
         </div>
+    </footer>
 
-    </nav>
-
-    <div class="main-container">
-        <header>
-            <div class="header-right">
-                <div class="header-text">
-                    <h1> Analise do mercado de tecnologia em Joinville e no brasil</h1>
-                </div>
-                <div class="header-text">
-                    <h2>Luis Guilherme Pereira</h2>
-                </div>
-                <div class="header-text">
-                    <h3>Fábrica de Software / 5º Semestre de Engenharia de Software</h3>
-                </div>
-                <div class="header-text">
-                    <p>Essa página apresenta uma análise feita sobre o mercado regional de Joinville e o mercado
-                        nacional.</p>
-                </div>
-            </div>
-            <div class="header-left">
-
-            </div>
-        </header>
-        <article>
-            <div class="market-search">
-                <div class="market-wrap">
-                    <div>
-                        <h2>Pesquisa de mercado</h2>
-                    </div>
-                    <div>
-                        <p>Foi levantado uma pesquisa sobre oito anúncios de emprego em redes sociais como Linkedin e
-                            plataformas de emprego. Os anúncios foram divididos igualmente entre Joinville e Brasil em
-                            geral.</p>
-                    </div>
-                    <div class="metrics">
-                        <div class="card-metrics">
-                            <span>8</span>
-                            <span>Vagas Analisadas</span>
-                        </div>
-                        <div class="card-metrics">
-                            <span>4</span>
-                            <span>Vagas Regionais</span>
-                        </div>
-                        <div class="card-metrics">
-                            <span>4</span>
-                            <span>Vagas Nacionais</span>
-                        </div>
-                        <div class="card-metrics">
-                            <span>6+</span>
-                            <span>Tecnologias </span>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="cited-tech">
-                <div class="cited-tech-divisor">
-                    <div class="cited-tech-title">
-                        <h2>TECNOLOGIAS MAIS CITADAS</h2>
-                    </div>
-
-                    <!-- Icones importados pelo font awesome  -->
-                    <div class="cited-tech-icons">
-                        <div class="cited-tech-icons-wrap">
-                            <div>
-                                <div>
-                                    <i class="fa-brands fa-square-js fa-3x" style="color: rgb(230, 187, 32);"></i>
-                                </div>
-                                <div>
-                                    <span>Em 6 vagas</span>
-                                </div>
-                            </div>
-
-                            <div>
-                                <div>
-                                    <i class="fa-brands fa-node fa-3x" style="color: rgb(26, 177, 23);"></i>
-                                </div>
-                                <span>Em 4 vagas</span>
-                            </div>
-                            <div>
-                                <div>
-                                    <i class="fa-brands fa-git fa-3x" style="color: rgb(210, 80, 21);"></i> / <i
-                                        class="fa-brands fa-github fa-3x" style="color: rgb(0, 0, 0);"></i>
-                                </div>
-                                <span>Em 7 vagas</span>
-                            </div>
-                            <div>
-                                <div>
-                                    <i class="fa-solid fa-database fa-3x" style="color: rgb(38, 102, 204);"></i>
-                                </div>
-                                <span>PostgreSQL em 6 vagas</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="cited-tech-resume">
-                        <div class="cited-tech-container">
-                            <p>O mercado atual além requisitar o conhecimento técnico nas tecnologias apresentadas
-                                acima, também exige uma base sólida em Clean Code, SOLID, clean Architecture, testes
-                                automatizados e principalmente com o avanço da tecnologia, saber lidar com Inteligência
-                                Artificial. Deixando de lado a parte técnica, as empresas buscam hoje por um perfil mais
-                                comunicativo e analítico, no qual prioriza um ambiente mais profissional e claro.</p>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-            <div class="jobs">
-                <div class="job-title">
-                    <h2>Vagas Analisadas</h2>
-                </div>
-                <div class="job-container">
-                    <div class="job-column">
-                        <h3>Joinville</h3>
-                        <div class="job-card">
-                            <h4>Desenvolvedor Full Stack PL</h4>
-                            <p>Multipedidos</p>
-                            <span>JavaScript, PHP, Angular, Laravel</span>
-                        </div>
-                        <div class="job-card">
-                            <h4>Desenvolvedor(a) Backend Júnior</h4>
-                            <p>Ultra LIMS</p>
-                            <span>PHP, Next.js, PostgreSQL, Docker</span>
-                        </div>
-                        <div class="job-card">
-                            <h4>Desenvolvedor C#</h4>
-                            <p>Selbetti Tecnologia</p>
-                            <span>C#, TypeScript, .NET, Angular</span>
-                        </div>
-                        <div class="job-card">
-                            <h4>Software Engineer (Back-end)</h4>
-                            <p>Motorista PX</p>
-                            <span>PHP, Go, Laravel, PostgreSQL</span>
-                        </div>
-                    </div>
-                    <div class="job-column">
-                        <h3>Nacional</h3>
-                        <div class="job-card">
-                            <h4>Desenvolvedor Fullstack Pleno</h4>
-                            <span>JavaScript, TypeScript, React, Node.js</span>
-                        </div>
-                        <div class="job-card">
-                            <h4>Desenvolvedor Back-end PL</h4>
-                            <p>Fasters Soluções em Tecnologia</p>
-                            <span>TypeScript, NestJS, PostgreSQL, Docker</span>
-                        </div>
-                        <div class="job-card">
-                            <h4>Desenvolvedor Full Stack Python e React</h4>
-                            <p>Firedev IT</p>
-                            <span>Python, React, Node.js, PostgreSQL</span>
-                        </div>
-                        <div class="job-card">
-                            <h4>Desenvolvedor Full Stack .NET e Node</h4>
-                            <p>ArcH</p>
-                            <span>C#, .NET Core, Node.js, React</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-
-
-        <footer>
-            <div class="footer-centralize">
-                <div class="footer-item">
-                    <p>12/08/2026</p>
-                </div>
-                <div class="footer-item">
-                    <p>Fábrica de software</p>
-                </div>
-                <div class="footer-item">
-                    <p>Luis Guilherme Pereira</p>
-                </div>
-            </div>
-
-        </footer>
-    </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+
 </html>
