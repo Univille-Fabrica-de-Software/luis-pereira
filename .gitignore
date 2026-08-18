@@ -5,3 +5,6 @@ Thumbs.db
 # Configurações de editor
 .vscode/
 .idea/
+
+# Projeto antigo (mantido apenas localmente)
+old/
